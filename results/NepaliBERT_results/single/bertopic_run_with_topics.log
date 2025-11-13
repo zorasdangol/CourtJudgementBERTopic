@@ -1,0 +1,7 @@
+2025-09-12 21:39:46,108 - INFO - Starting BERTopic script...
+2025-09-12 21:39:46,117 - INFO - Use pytorch device_name: cpu
+2025-09-12 21:39:46,126 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-09-12 21:40:22,889 - INFO - Found 7 topics (excluding -1). Calculating coherence...
+2025-09-12 21:40:22,909 - INFO - adding document #0 to Dictionary<0 unique tokens: []>
+2025-09-12 21:40:22,988 - INFO - built Dictionary<4739 unique tokens: ['अदालत', 'अधिराज्य', 'अनिवार्य', 'अन्य', 'अपराध']...> from 116 documents (total 31097 corpus positions)
+2025-09-12 21:40:22,988 - INFO - Dictionary lifecycle event {'msg': "built Dictionary<4739 unique tokens: ['अदालत', 'अधिराज्य', 'अनिवार्य', 'अन्य', 'अपराध']...> from 116 documents (total 31097 corpus positions)", 'datetime': '2025-09-12T21:40:22.988497', 'gensim': '4.3.3', 'python': '3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19045-SP0', 'event': 'created'}

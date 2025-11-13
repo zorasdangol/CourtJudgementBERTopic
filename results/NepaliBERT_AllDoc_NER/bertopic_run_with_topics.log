@@ -1,0 +1,10 @@
+2025-11-13 19:35:30,649 - INFO - Starting BERTopic script...
+2025-11-13 19:35:30,674 - INFO - Use pytorch device_name: cpu
+2025-11-13 19:35:30,675 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-13 19:41:25,784 - INFO - Use pytorch device_name: cpu
+2025-11-13 19:41:25,787 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-13 19:42:51,838 - INFO - adding document #0 to Dictionary<0 unique tokens: []>
+2025-11-13 19:42:52,052 - INFO - built Dictionary<30396 unique tokens: ['अग्राधिकार', 'अत्यावश्यक', 'अधिवक्ता', 'अध्ययन', 'अनिवार्य']...> from 1416 documents (total 473673 corpus positions)
+2025-11-13 19:42:52,069 - INFO - Dictionary lifecycle event {'msg': "built Dictionary<30396 unique tokens: ['अग्राधिकार', 'अत्यावश्यक', 'अधिवक्ता', 'अध्ययन', 'अनिवार्य']...> from 1416 documents (total 473673 corpus positions)", 'datetime': '2025-11-13T19:42:52.067956', 'gensim': '4.4.0', 'python': '3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'created'}
+2025-11-13 19:55:51,297 - INFO - Use pytorch device_name: cpu
+2025-11-13 19:55:51,299 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2

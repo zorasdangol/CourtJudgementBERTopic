@@ -1,0 +1,6 @@
+{
+    "model_type": "bert",
+    "do_lower_case": false,
+    "tokenizer_class": "BertTokenizer"
+  }
+  

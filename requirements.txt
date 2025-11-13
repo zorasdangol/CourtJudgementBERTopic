@@ -1,0 +1,11 @@
+pip install --upgrade transformers
+Successfully installed huggingface-hub-0.33.2 tokenizers-0.21.2 transformers-4.53.1
+pip install nepalikit
+Successfully installed nepalikit-1.0.2 sentencepiece-0.2.0
+Successfully installed sympy-1.13.3 torch-2.7.1+cu118
+pip install gensim
+Successfully installed gensim-4.3.3 scipy-1.13.1
+pip install bertopic
+Successfully installed bertopic-0.17.0 sentence-transformers-5.0.0
+python3 -m spacy download xx_ent_wiki_sm
+Successfully installed xx-ent-wiki-sm-3.7.0

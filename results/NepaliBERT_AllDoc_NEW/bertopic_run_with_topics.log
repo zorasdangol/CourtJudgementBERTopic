@@ -1,0 +1,3 @@
+2025-11-02 09:19:05,115 - INFO - Starting BERTopic script...
+2025-11-02 09:19:05,226 - INFO - Use pytorch device_name: cpu
+2025-11-02 09:19:05,226 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
