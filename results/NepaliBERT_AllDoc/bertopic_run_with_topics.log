@@ -1,291 +1,95 @@
-2025-11-13 19:04:56,644 - INFO - Starting BERTopic script...
-2025-11-13 19:04:56,694 - INFO - Use pytorch device_name: cpu
-2025-11-13 19:04:56,694 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
-2025-11-13 19:07:39,974 - INFO - Number of topics found: 67
-2025-11-13 19:07:39,975 - INFO - Extracted details for 67 topics (including outlier topic -1 if present).
-2025-11-13 19:08:09,774 - INFO - adding document #0 to Dictionary<0 unique tokens: []>
-2025-11-13 19:08:10,231 - INFO - built Dictionary<30258 unique tokens: ['अग्राधिकार', 'अत्यावश्यक', 'अधिवक्ता', 'अध्ययन', 'अनन्तराज']...> from 1416 documents (total 494224 corpus positions)
-2025-11-13 19:08:10,233 - INFO - Dictionary lifecycle event {'msg': "built Dictionary<30258 unique tokens: ['अग्राधिकार', 'अत्यावश्यक', 'अधिवक्ता', 'अध्ययन', 'अनन्तराज']...> from 1416 documents (total 494224 corpus positions)", 'datetime': '2025-11-13T19:08:10.232352', 'gensim': '4.4.0', 'python': '3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'created'}
-2025-11-13 19:08:10,255 - INFO - using ParallelWordOccurrenceAccumulator<processes=11, batch_size=64> to estimate probabilities from sliding windows
-2025-11-13 19:08:26,427 - INFO - 1 batches submitted to accumulate stats from 64 documents (13311 virtual)
-2025-11-13 19:08:26,435 - INFO - 2 batches submitted to accumulate stats from 128 documents (28919 virtual)
-2025-11-13 19:08:26,442 - INFO - 3 batches submitted to accumulate stats from 192 documents (44523 virtual)
-2025-11-13 19:08:26,448 - INFO - 4 batches submitted to accumulate stats from 256 documents (61616 virtual)
-2025-11-13 19:08:26,455 - INFO - 5 batches submitted to accumulate stats from 320 documents (80672 virtual)
-2025-11-13 19:08:26,460 - INFO - 6 batches submitted to accumulate stats from 384 documents (97480 virtual)
-2025-11-13 19:08:26,466 - INFO - 7 batches submitted to accumulate stats from 448 documents (115990 virtual)
-2025-11-13 19:08:26,472 - INFO - 8 batches submitted to accumulate stats from 512 documents (134296 virtual)
-2025-11-13 19:08:26,479 - INFO - 9 batches submitted to accumulate stats from 576 documents (152072 virtual)
-2025-11-13 19:08:26,487 - INFO - 10 batches submitted to accumulate stats from 640 documents (172962 virtual)
-2025-11-13 19:08:26,493 - INFO - 11 batches submitted to accumulate stats from 704 documents (189631 virtual)
-2025-11-13 19:08:26,499 - INFO - 12 batches submitted to accumulate stats from 768 documents (207494 virtual)
-2025-11-13 19:08:26,507 - INFO - 13 batches submitted to accumulate stats from 832 documents (226403 virtual)
-2025-11-13 19:08:26,514 - INFO - 14 batches submitted to accumulate stats from 896 documents (243836 virtual)
-2025-11-13 19:08:26,522 - INFO - 15 batches submitted to accumulate stats from 960 documents (262245 virtual)
-2025-11-13 19:08:26,527 - INFO - 16 batches submitted to accumulate stats from 1024 documents (269402 virtual)
-2025-11-13 19:08:26,531 - INFO - 17 batches submitted to accumulate stats from 1088 documents (274560 virtual)
-2025-11-13 19:08:26,536 - INFO - 18 batches submitted to accumulate stats from 1152 documents (288245 virtual)
-2025-11-13 19:08:26,543 - INFO - 19 batches submitted to accumulate stats from 1216 documents (303047 virtual)
-2025-11-13 19:08:26,549 - INFO - 20 batches submitted to accumulate stats from 1280 documents (311929 virtual)
-2025-11-13 19:08:26,555 - INFO - 21 batches submitted to accumulate stats from 1344 documents (324900 virtual)
-2025-11-13 19:08:26,564 - INFO - 22 batches submitted to accumulate stats from 1408 documents (338320 virtual)
-2025-11-13 19:08:26,745 - INFO - 23 batches submitted to accumulate stats from 1472 documents (339880 virtual)
-2025-11-13 19:08:27,994 - INFO - 11 accumulators retrieved from output queue
-2025-11-13 19:08:28,053 - INFO - accumulated word occurrence stats for 343701 virtual documents
-2025-11-13 19:08:28,739 - INFO - topic diversity : 0.8299
-2025-11-13 19:08:52,208 - INFO - adding document #0 to Dictionary<0 unique tokens: []>
-2025-11-13 19:08:52,552 - INFO - built Dictionary<30258 unique tokens: ['अग्राधिकार', 'अत्यावश्यक', 'अधिवक्ता', 'अध्ययन', 'अनन्तराज']...> from 1416 documents (total 494224 corpus positions)
-2025-11-13 19:08:52,554 - INFO - Dictionary lifecycle event {'msg': "built Dictionary<30258 unique tokens: ['अग्राधिकार', 'अत्यावश्यक', 'अधिवक्ता', 'अध्ययन', 'अनन्तराज']...> from 1416 documents (total 494224 corpus positions)", 'datetime': '2025-11-13T19:08:52.554041', 'gensim': '4.4.0', 'python': '3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'created'}
-2025-11-13 19:08:52,560 - INFO - using ParallelWordOccurrenceAccumulator<processes=11, batch_size=64> to estimate probabilities from sliding windows
-2025-11-13 19:09:03,998 - INFO - 1 batches submitted to accumulate stats from 64 documents (13311 virtual)
-2025-11-13 19:09:04,006 - INFO - 2 batches submitted to accumulate stats from 128 documents (28919 virtual)
-2025-11-13 19:09:04,012 - INFO - 3 batches submitted to accumulate stats from 192 documents (44523 virtual)
-2025-11-13 19:09:04,019 - INFO - 4 batches submitted to accumulate stats from 256 documents (61616 virtual)
-2025-11-13 19:09:04,025 - INFO - 5 batches submitted to accumulate stats from 320 documents (80672 virtual)
-2025-11-13 19:09:04,032 - INFO - 6 batches submitted to accumulate stats from 384 documents (97480 virtual)
-2025-11-13 19:09:04,040 - INFO - 7 batches submitted to accumulate stats from 448 documents (115990 virtual)
-2025-11-13 19:09:04,047 - INFO - 8 batches submitted to accumulate stats from 512 documents (134296 virtual)
-2025-11-13 19:09:04,053 - INFO - 9 batches submitted to accumulate stats from 576 documents (152072 virtual)
-2025-11-13 19:09:04,062 - INFO - 10 batches submitted to accumulate stats from 640 documents (172962 virtual)
-2025-11-13 19:09:04,070 - INFO - 11 batches submitted to accumulate stats from 704 documents (189631 virtual)
-2025-11-13 19:09:04,077 - INFO - 12 batches submitted to accumulate stats from 768 documents (207494 virtual)
-2025-11-13 19:09:04,084 - INFO - 13 batches submitted to accumulate stats from 832 documents (226403 virtual)
-2025-11-13 19:09:04,094 - INFO - 14 batches submitted to accumulate stats from 896 documents (243836 virtual)
-2025-11-13 19:09:04,104 - INFO - 15 batches submitted to accumulate stats from 960 documents (262245 virtual)
-2025-11-13 19:09:04,110 - INFO - 16 batches submitted to accumulate stats from 1024 documents (269402 virtual)
-2025-11-13 19:09:04,114 - INFO - 17 batches submitted to accumulate stats from 1088 documents (274560 virtual)
-2025-11-13 19:09:04,122 - INFO - 18 batches submitted to accumulate stats from 1152 documents (288245 virtual)
-2025-11-13 19:09:04,130 - INFO - 19 batches submitted to accumulate stats from 1216 documents (303047 virtual)
-2025-11-13 19:09:04,137 - INFO - 20 batches submitted to accumulate stats from 1280 documents (311929 virtual)
-2025-11-13 19:09:04,144 - INFO - 21 batches submitted to accumulate stats from 1344 documents (324900 virtual)
-2025-11-13 19:09:04,150 - INFO - 22 batches submitted to accumulate stats from 1408 documents (338320 virtual)
-2025-11-13 19:09:04,464 - INFO - 23 batches submitted to accumulate stats from 1472 documents (339880 virtual)
-2025-11-13 19:09:05,546 - INFO - 11 accumulators retrieved from output queue
-2025-11-13 19:09:05,616 - INFO - accumulated word occurrence stats for 343701 virtual documents
-2025-11-13 19:09:06,248 - INFO - topic diversity : 0.8299
-2025-11-13 19:43:43,345 - INFO - Use pytorch device_name: cpu
-2025-11-13 19:43:43,347 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
-2025-11-13 19:44:59,835 - INFO - Number of topics found: 67
-2025-11-13 19:44:59,838 - INFO - Extracted details for 67 topics (including outlier topic -1 if present).
-2025-11-13 19:45:15,632 - INFO - adding document #0 to Dictionary<0 unique tokens: []>
-2025-11-13 19:45:15,864 - INFO - built Dictionary<30258 unique tokens: ['अग्राधिकार', 'अत्यावश्यक', 'अधिवक्ता', 'अध्ययन', 'अनन्तराज']...> from 1416 documents (total 494224 corpus positions)
-2025-11-13 19:45:15,865 - INFO - Dictionary lifecycle event {'msg': "built Dictionary<30258 unique tokens: ['अग्राधिकार', 'अत्यावश्यक', 'अधिवक्ता', 'अध्ययन', 'अनन्तराज']...> from 1416 documents (total 494224 corpus positions)", 'datetime': '2025-11-13T19:45:15.865808', 'gensim': '4.4.0', 'python': '3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'created'}
-2025-11-13 19:45:15,865 - INFO - using ParallelWordOccurrenceAccumulator<processes=11, batch_size=64> to estimate probabilities from sliding windows
-2025-11-13 19:45:27,115 - INFO - 1 batches submitted to accumulate stats from 64 documents (13311 virtual)
-2025-11-13 19:45:27,119 - INFO - 2 batches submitted to accumulate stats from 128 documents (28919 virtual)
-2025-11-13 19:45:27,126 - INFO - 3 batches submitted to accumulate stats from 192 documents (44523 virtual)
-2025-11-13 19:45:27,132 - INFO - 4 batches submitted to accumulate stats from 256 documents (61616 virtual)
-2025-11-13 19:45:27,143 - INFO - 5 batches submitted to accumulate stats from 320 documents (80672 virtual)
-2025-11-13 19:45:27,150 - INFO - 6 batches submitted to accumulate stats from 384 documents (97480 virtual)
-2025-11-13 19:45:27,158 - INFO - 7 batches submitted to accumulate stats from 448 documents (115990 virtual)
-2025-11-13 19:45:27,165 - INFO - 8 batches submitted to accumulate stats from 512 documents (134296 virtual)
-2025-11-13 19:45:27,174 - INFO - 9 batches submitted to accumulate stats from 576 documents (152072 virtual)
-2025-11-13 19:45:27,184 - INFO - 10 batches submitted to accumulate stats from 640 documents (172962 virtual)
-2025-11-13 19:45:27,194 - INFO - 11 batches submitted to accumulate stats from 704 documents (189631 virtual)
-2025-11-13 19:45:27,203 - INFO - 12 batches submitted to accumulate stats from 768 documents (207494 virtual)
-2025-11-13 19:45:27,211 - INFO - 13 batches submitted to accumulate stats from 832 documents (226403 virtual)
-2025-11-13 19:45:27,219 - INFO - 14 batches submitted to accumulate stats from 896 documents (243836 virtual)
-2025-11-13 19:45:27,227 - INFO - 15 batches submitted to accumulate stats from 960 documents (262245 virtual)
-2025-11-13 19:45:27,234 - INFO - 16 batches submitted to accumulate stats from 1024 documents (269402 virtual)
-2025-11-13 19:45:27,238 - INFO - 17 batches submitted to accumulate stats from 1088 documents (274560 virtual)
-2025-11-13 19:45:27,246 - INFO - 18 batches submitted to accumulate stats from 1152 documents (288245 virtual)
-2025-11-13 19:45:27,254 - INFO - 19 batches submitted to accumulate stats from 1216 documents (303047 virtual)
-2025-11-13 19:45:27,260 - INFO - 20 batches submitted to accumulate stats from 1280 documents (311929 virtual)
-2025-11-13 19:45:27,267 - INFO - 21 batches submitted to accumulate stats from 1344 documents (324900 virtual)
-2025-11-13 19:45:27,275 - INFO - 22 batches submitted to accumulate stats from 1408 documents (338320 virtual)
-2025-11-13 19:45:27,744 - INFO - 23 batches submitted to accumulate stats from 1472 documents (339880 virtual)
-2025-11-13 19:45:29,582 - INFO - 11 accumulators retrieved from output queue
-2025-11-13 19:45:29,632 - INFO - accumulated word occurrence stats for 343701 virtual documents
-2025-11-13 19:45:30,111 - INFO - topic diversity : 0.7776
-2025-11-13 19:45:46,231 - INFO - adding document #0 to Dictionary<0 unique tokens: []>
-2025-11-13 19:45:46,459 - INFO - built Dictionary<30258 unique tokens: ['अग्राधिकार', 'अत्यावश्यक', 'अधिवक्ता', 'अध्ययन', 'अनन्तराज']...> from 1416 documents (total 494224 corpus positions)
-2025-11-13 19:45:46,460 - INFO - Dictionary lifecycle event {'msg': "built Dictionary<30258 unique tokens: ['अग्राधिकार', 'अत्यावश्यक', 'अधिवक्ता', 'अध्ययन', 'अनन्तराज']...> from 1416 documents (total 494224 corpus positions)", 'datetime': '2025-11-13T19:45:46.460154', 'gensim': '4.4.0', 'python': '3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'created'}
-2025-11-13 19:45:46,464 - INFO - using ParallelWordOccurrenceAccumulator<processes=11, batch_size=64> to estimate probabilities from sliding windows
-2025-11-13 19:45:57,181 - INFO - 1 batches submitted to accumulate stats from 64 documents (13311 virtual)
-2025-11-13 19:45:57,186 - INFO - 2 batches submitted to accumulate stats from 128 documents (28919 virtual)
-2025-11-13 19:45:57,192 - INFO - 3 batches submitted to accumulate stats from 192 documents (44523 virtual)
-2025-11-13 19:45:57,198 - INFO - 4 batches submitted to accumulate stats from 256 documents (61616 virtual)
-2025-11-13 19:45:57,204 - INFO - 5 batches submitted to accumulate stats from 320 documents (80672 virtual)
-2025-11-13 19:45:57,210 - INFO - 6 batches submitted to accumulate stats from 384 documents (97480 virtual)
-2025-11-13 19:45:57,219 - INFO - 7 batches submitted to accumulate stats from 448 documents (115990 virtual)
-2025-11-13 19:45:57,227 - INFO - 8 batches submitted to accumulate stats from 512 documents (134296 virtual)
-2025-11-13 19:45:57,231 - INFO - 9 batches submitted to accumulate stats from 576 documents (152072 virtual)
-2025-11-13 19:45:57,241 - INFO - 10 batches submitted to accumulate stats from 640 documents (172962 virtual)
-2025-11-13 19:45:57,251 - INFO - 11 batches submitted to accumulate stats from 704 documents (189631 virtual)
-2025-11-13 19:45:57,259 - INFO - 12 batches submitted to accumulate stats from 768 documents (207494 virtual)
-2025-11-13 19:45:57,266 - INFO - 13 batches submitted to accumulate stats from 832 documents (226403 virtual)
-2025-11-13 19:45:57,272 - INFO - 14 batches submitted to accumulate stats from 896 documents (243836 virtual)
-2025-11-13 19:45:57,281 - INFO - 15 batches submitted to accumulate stats from 960 documents (262245 virtual)
-2025-11-13 19:45:57,289 - INFO - 16 batches submitted to accumulate stats from 1024 documents (269402 virtual)
-2025-11-13 19:45:57,293 - INFO - 17 batches submitted to accumulate stats from 1088 documents (274560 virtual)
-2025-11-13 19:45:57,300 - INFO - 18 batches submitted to accumulate stats from 1152 documents (288245 virtual)
-2025-11-13 19:45:57,306 - INFO - 19 batches submitted to accumulate stats from 1216 documents (303047 virtual)
-2025-11-13 19:45:57,314 - INFO - 20 batches submitted to accumulate stats from 1280 documents (311929 virtual)
-2025-11-13 19:45:57,320 - INFO - 21 batches submitted to accumulate stats from 1344 documents (324900 virtual)
-2025-11-13 19:45:57,328 - INFO - 22 batches submitted to accumulate stats from 1408 documents (338320 virtual)
-2025-11-13 19:45:57,673 - INFO - 23 batches submitted to accumulate stats from 1472 documents (339880 virtual)
-2025-11-13 19:45:59,164 - INFO - 11 accumulators retrieved from output queue
-2025-11-13 19:45:59,215 - INFO - accumulated word occurrence stats for 343701 virtual documents
-2025-11-13 19:45:59,630 - INFO - topic diversity : 0.7776
-2025-11-13 19:48:22,650 - INFO - Use pytorch device_name: cpu
-2025-11-13 19:48:22,651 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
-2025-11-13 19:49:24,764 - INFO - Number of topics found: 3
-2025-11-13 19:49:24,766 - INFO - Extracted details for 3 topics (including outlier topic -1 if present).
-2025-11-13 19:50:26,865 - INFO - Use pytorch device_name: cpu
-2025-11-13 19:50:26,865 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
-2025-11-13 19:51:38,566 - INFO - Number of topics found: 36
-2025-11-13 19:51:38,568 - INFO - Extracted details for 36 topics (including outlier topic -1 if present).
-2025-11-13 19:51:53,939 - INFO - adding document #0 to Dictionary<0 unique tokens: []>
-2025-11-13 19:51:54,178 - INFO - built Dictionary<30258 unique tokens: ['अग्राधिकार', 'अत्यावश्यक', 'अधिवक्ता', 'अध्ययन', 'अनन्तराज']...> from 1416 documents (total 494224 corpus positions)
-2025-11-13 19:51:54,178 - INFO - Dictionary lifecycle event {'msg': "built Dictionary<30258 unique tokens: ['अग्राधिकार', 'अत्यावश्यक', 'अधिवक्ता', 'अध्ययन', 'अनन्तराज']...> from 1416 documents (total 494224 corpus positions)", 'datetime': '2025-11-13T19:51:54.178890', 'gensim': '4.4.0', 'python': '3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'created'}
-2025-11-13 19:51:54,182 - INFO - using ParallelWordOccurrenceAccumulator<processes=11, batch_size=64> to estimate probabilities from sliding windows
-2025-11-13 19:52:05,817 - INFO - 1 batches submitted to accumulate stats from 64 documents (13311 virtual)
-2025-11-13 19:52:05,823 - INFO - 2 batches submitted to accumulate stats from 128 documents (28919 virtual)
-2025-11-13 19:52:05,829 - INFO - 3 batches submitted to accumulate stats from 192 documents (44523 virtual)
-2025-11-13 19:52:05,835 - INFO - 4 batches submitted to accumulate stats from 256 documents (61616 virtual)
-2025-11-13 19:52:05,843 - INFO - 5 batches submitted to accumulate stats from 320 documents (80672 virtual)
-2025-11-13 19:52:05,849 - INFO - 6 batches submitted to accumulate stats from 384 documents (97480 virtual)
-2025-11-13 19:52:05,858 - INFO - 7 batches submitted to accumulate stats from 448 documents (115990 virtual)
-2025-11-13 19:52:05,864 - INFO - 8 batches submitted to accumulate stats from 512 documents (134296 virtual)
-2025-11-13 19:52:05,874 - INFO - 9 batches submitted to accumulate stats from 576 documents (152072 virtual)
-2025-11-13 19:52:05,880 - INFO - 10 batches submitted to accumulate stats from 640 documents (172962 virtual)
-2025-11-13 19:52:05,889 - INFO - 11 batches submitted to accumulate stats from 704 documents (189631 virtual)
-2025-11-13 19:52:05,897 - INFO - 12 batches submitted to accumulate stats from 768 documents (207494 virtual)
-2025-11-13 19:52:05,905 - INFO - 13 batches submitted to accumulate stats from 832 documents (226403 virtual)
-2025-11-13 19:52:05,912 - INFO - 14 batches submitted to accumulate stats from 896 documents (243836 virtual)
-2025-11-13 19:52:05,920 - INFO - 15 batches submitted to accumulate stats from 960 documents (262245 virtual)
-2025-11-13 19:52:05,926 - INFO - 16 batches submitted to accumulate stats from 1024 documents (269402 virtual)
-2025-11-13 19:52:05,931 - INFO - 17 batches submitted to accumulate stats from 1088 documents (274560 virtual)
-2025-11-13 19:52:05,937 - INFO - 18 batches submitted to accumulate stats from 1152 documents (288245 virtual)
-2025-11-13 19:52:05,945 - INFO - 19 batches submitted to accumulate stats from 1216 documents (303047 virtual)
-2025-11-13 19:52:05,949 - INFO - 20 batches submitted to accumulate stats from 1280 documents (311929 virtual)
-2025-11-13 19:52:05,957 - INFO - 21 batches submitted to accumulate stats from 1344 documents (324900 virtual)
-2025-11-13 19:52:05,965 - INFO - 22 batches submitted to accumulate stats from 1408 documents (338320 virtual)
-2025-11-13 19:52:06,153 - INFO - 23 batches submitted to accumulate stats from 1472 documents (339880 virtual)
-2025-11-13 19:52:07,744 - INFO - 11 accumulators retrieved from output queue
-2025-11-13 19:52:07,793 - INFO - accumulated word occurrence stats for 343701 virtual documents
-2025-11-13 19:52:08,141 - INFO - topic diversity : 0.8806
-2025-11-13 19:52:27,351 - INFO - adding document #0 to Dictionary<0 unique tokens: []>
-2025-11-13 19:52:27,955 - INFO - built Dictionary<30258 unique tokens: ['अग्राधिकार', 'अत्यावश्यक', 'अधिवक्ता', 'अध्ययन', 'अनन्तराज']...> from 1416 documents (total 494224 corpus positions)
-2025-11-13 19:52:27,955 - INFO - Dictionary lifecycle event {'msg': "built Dictionary<30258 unique tokens: ['अग्राधिकार', 'अत्यावश्यक', 'अधिवक्ता', 'अध्ययन', 'अनन्तराज']...> from 1416 documents (total 494224 corpus positions)", 'datetime': '2025-11-13T19:52:27.955640', 'gensim': '4.4.0', 'python': '3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'created'}
-2025-11-13 19:52:27,955 - INFO - using ParallelWordOccurrenceAccumulator<processes=11, batch_size=64> to estimate probabilities from sliding windows
-2025-11-13 19:52:39,470 - INFO - 1 batches submitted to accumulate stats from 64 documents (13311 virtual)
-2025-11-13 19:52:39,475 - INFO - 2 batches submitted to accumulate stats from 128 documents (28919 virtual)
-2025-11-13 19:52:39,479 - INFO - 3 batches submitted to accumulate stats from 192 documents (44523 virtual)
-2025-11-13 19:52:39,483 - INFO - 4 batches submitted to accumulate stats from 256 documents (61616 virtual)
-2025-11-13 19:52:39,492 - INFO - 5 batches submitted to accumulate stats from 320 documents (80672 virtual)
-2025-11-13 19:52:39,498 - INFO - 6 batches submitted to accumulate stats from 384 documents (97480 virtual)
-2025-11-13 19:52:39,505 - INFO - 7 batches submitted to accumulate stats from 448 documents (115990 virtual)
-2025-11-13 19:52:39,512 - INFO - 8 batches submitted to accumulate stats from 512 documents (134296 virtual)
-2025-11-13 19:52:39,519 - INFO - 9 batches submitted to accumulate stats from 576 documents (152072 virtual)
-2025-11-13 19:52:39,527 - INFO - 10 batches submitted to accumulate stats from 640 documents (172962 virtual)
-2025-11-13 19:52:39,533 - INFO - 11 batches submitted to accumulate stats from 704 documents (189631 virtual)
-2025-11-13 19:52:39,542 - INFO - 12 batches submitted to accumulate stats from 768 documents (207494 virtual)
-2025-11-13 19:52:39,551 - INFO - 13 batches submitted to accumulate stats from 832 documents (226403 virtual)
-2025-11-13 19:52:39,557 - INFO - 14 batches submitted to accumulate stats from 896 documents (243836 virtual)
-2025-11-13 19:52:39,565 - INFO - 15 batches submitted to accumulate stats from 960 documents (262245 virtual)
-2025-11-13 19:52:39,571 - INFO - 16 batches submitted to accumulate stats from 1024 documents (269402 virtual)
-2025-11-13 19:52:39,577 - INFO - 17 batches submitted to accumulate stats from 1088 documents (274560 virtual)
-2025-11-13 19:52:39,583 - INFO - 18 batches submitted to accumulate stats from 1152 documents (288245 virtual)
-2025-11-13 19:52:39,592 - INFO - 19 batches submitted to accumulate stats from 1216 documents (303047 virtual)
-2025-11-13 19:52:39,598 - INFO - 20 batches submitted to accumulate stats from 1280 documents (311929 virtual)
-2025-11-13 19:52:39,605 - INFO - 21 batches submitted to accumulate stats from 1344 documents (324900 virtual)
-2025-11-13 19:52:39,613 - INFO - 22 batches submitted to accumulate stats from 1408 documents (338320 virtual)
-2025-11-13 19:52:39,911 - INFO - 23 batches submitted to accumulate stats from 1472 documents (339880 virtual)
-2025-11-13 19:52:41,073 - INFO - 11 accumulators retrieved from output queue
-2025-11-13 19:52:41,111 - INFO - accumulated word occurrence stats for 343701 virtual documents
-2025-11-13 19:52:41,372 - INFO - topic diversity : 0.8806
-2025-11-13 19:54:46,028 - INFO - Use pytorch device_name: cpu
-2025-11-13 19:54:46,028 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
-2025-11-13 19:56:14,809 - INFO - Number of topics found: 89
-2025-11-13 19:56:14,812 - INFO - Extracted details for 89 topics (including outlier topic -1 if present).
-2025-11-13 19:57:31,090 - INFO - adding document #0 to Dictionary<0 unique tokens: []>
-2025-11-13 19:57:31,556 - INFO - built Dictionary<30258 unique tokens: ['अग्राधिकार', 'अत्यावश्यक', 'अधिवक्ता', 'अध्ययन', 'अनन्तराज']...> from 1416 documents (total 494224 corpus positions)
-2025-11-13 19:57:31,557 - INFO - Dictionary lifecycle event {'msg': "built Dictionary<30258 unique tokens: ['अग्राधिकार', 'अत्यावश्यक', 'अधिवक्ता', 'अध्ययन', 'अनन्तराज']...> from 1416 documents (total 494224 corpus positions)", 'datetime': '2025-11-13T19:57:31.557582', 'gensim': '4.4.0', 'python': '3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'created'}
-2025-11-13 19:57:31,568 - INFO - using ParallelWordOccurrenceAccumulator<processes=11, batch_size=64> to estimate probabilities from sliding windows
-2025-11-13 19:57:56,757 - INFO - 1 batches submitted to accumulate stats from 64 documents (13311 virtual)
-2025-11-13 19:57:56,769 - INFO - 2 batches submitted to accumulate stats from 128 documents (28919 virtual)
-2025-11-13 19:57:56,779 - INFO - 3 batches submitted to accumulate stats from 192 documents (44523 virtual)
-2025-11-13 19:57:56,789 - INFO - 4 batches submitted to accumulate stats from 256 documents (61616 virtual)
-2025-11-13 19:57:56,826 - INFO - 5 batches submitted to accumulate stats from 320 documents (80672 virtual)
-2025-11-13 19:57:56,836 - INFO - 6 batches submitted to accumulate stats from 384 documents (97480 virtual)
-2025-11-13 19:57:56,850 - INFO - 7 batches submitted to accumulate stats from 448 documents (115990 virtual)
-2025-11-13 19:57:56,863 - INFO - 8 batches submitted to accumulate stats from 512 documents (134296 virtual)
-2025-11-13 19:57:56,880 - INFO - 9 batches submitted to accumulate stats from 576 documents (152072 virtual)
-2025-11-13 19:57:56,895 - INFO - 10 batches submitted to accumulate stats from 640 documents (172962 virtual)
-2025-11-13 19:57:56,907 - INFO - 11 batches submitted to accumulate stats from 704 documents (189631 virtual)
-2025-11-13 19:57:56,927 - INFO - 12 batches submitted to accumulate stats from 768 documents (207494 virtual)
-2025-11-13 19:57:56,938 - INFO - 13 batches submitted to accumulate stats from 832 documents (226403 virtual)
-2025-11-13 19:57:56,952 - INFO - 14 batches submitted to accumulate stats from 896 documents (243836 virtual)
-2025-11-13 19:57:57,023 - INFO - 15 batches submitted to accumulate stats from 960 documents (262245 virtual)
-2025-11-13 19:57:57,032 - INFO - 16 batches submitted to accumulate stats from 1024 documents (269402 virtual)
-2025-11-13 19:57:57,040 - INFO - 17 batches submitted to accumulate stats from 1088 documents (274560 virtual)
-2025-11-13 19:57:57,063 - INFO - 18 batches submitted to accumulate stats from 1152 documents (288245 virtual)
-2025-11-13 19:57:57,077 - INFO - 19 batches submitted to accumulate stats from 1216 documents (303047 virtual)
-2025-11-13 19:57:57,088 - INFO - 20 batches submitted to accumulate stats from 1280 documents (311929 virtual)
-2025-11-13 19:57:57,137 - INFO - 21 batches submitted to accumulate stats from 1344 documents (324900 virtual)
-2025-11-13 19:57:57,153 - INFO - 22 batches submitted to accumulate stats from 1408 documents (338320 virtual)
-2025-11-13 19:57:58,238 - INFO - 23 batches submitted to accumulate stats from 1472 documents (339880 virtual)
-2025-11-13 19:58:05,082 - INFO - 11 accumulators retrieved from output queue
-2025-11-13 19:58:05,176 - INFO - accumulated word occurrence stats for 343701 virtual documents
-2025-11-13 19:58:06,155 - INFO - topic diversity : 0.7899
-2025-11-13 19:58:25,672 - INFO - adding document #0 to Dictionary<0 unique tokens: []>
-2025-11-13 19:58:25,924 - INFO - built Dictionary<30258 unique tokens: ['अग्राधिकार', 'अत्यावश्यक', 'अधिवक्ता', 'अध्ययन', 'अनन्तराज']...> from 1416 documents (total 494224 corpus positions)
-2025-11-13 19:58:25,925 - INFO - Dictionary lifecycle event {'msg': "built Dictionary<30258 unique tokens: ['अग्राधिकार', 'अत्यावश्यक', 'अधिवक्ता', 'अध्ययन', 'अनन्तराज']...> from 1416 documents (total 494224 corpus positions)", 'datetime': '2025-11-13T19:58:25.925037', 'gensim': '4.4.0', 'python': '3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'created'}
-2025-11-13 19:58:25,931 - INFO - using ParallelWordOccurrenceAccumulator<processes=11, batch_size=64> to estimate probabilities from sliding windows
-2025-11-13 19:58:38,117 - INFO - 1 batches submitted to accumulate stats from 64 documents (13311 virtual)
-2025-11-13 19:58:38,122 - INFO - 2 batches submitted to accumulate stats from 128 documents (28919 virtual)
-2025-11-13 19:58:38,128 - INFO - 3 batches submitted to accumulate stats from 192 documents (44523 virtual)
-2025-11-13 19:58:38,134 - INFO - 4 batches submitted to accumulate stats from 256 documents (61616 virtual)
-2025-11-13 19:58:38,141 - INFO - 5 batches submitted to accumulate stats from 320 documents (80672 virtual)
-2025-11-13 19:58:38,147 - INFO - 6 batches submitted to accumulate stats from 384 documents (97480 virtual)
-2025-11-13 19:58:38,154 - INFO - 7 batches submitted to accumulate stats from 448 documents (115990 virtual)
-2025-11-13 19:58:38,161 - INFO - 8 batches submitted to accumulate stats from 512 documents (134296 virtual)
-2025-11-13 19:58:38,168 - INFO - 9 batches submitted to accumulate stats from 576 documents (152072 virtual)
-2025-11-13 19:58:38,176 - INFO - 10 batches submitted to accumulate stats from 640 documents (172962 virtual)
-2025-11-13 19:58:38,188 - INFO - 11 batches submitted to accumulate stats from 704 documents (189631 virtual)
-2025-11-13 19:58:38,196 - INFO - 12 batches submitted to accumulate stats from 768 documents (207494 virtual)
-2025-11-13 19:58:38,204 - INFO - 13 batches submitted to accumulate stats from 832 documents (226403 virtual)
-2025-11-13 19:58:38,212 - INFO - 14 batches submitted to accumulate stats from 896 documents (243836 virtual)
-2025-11-13 19:58:38,220 - INFO - 15 batches submitted to accumulate stats from 960 documents (262245 virtual)
-2025-11-13 19:58:38,225 - INFO - 16 batches submitted to accumulate stats from 1024 documents (269402 virtual)
-2025-11-13 19:58:38,230 - INFO - 17 batches submitted to accumulate stats from 1088 documents (274560 virtual)
-2025-11-13 19:58:38,237 - INFO - 18 batches submitted to accumulate stats from 1152 documents (288245 virtual)
-2025-11-13 19:58:38,243 - INFO - 19 batches submitted to accumulate stats from 1216 documents (303047 virtual)
-2025-11-13 19:58:38,249 - INFO - 20 batches submitted to accumulate stats from 1280 documents (311929 virtual)
-2025-11-13 19:58:38,256 - INFO - 21 batches submitted to accumulate stats from 1344 documents (324900 virtual)
-2025-11-13 19:58:38,265 - INFO - 22 batches submitted to accumulate stats from 1408 documents (338320 virtual)
-2025-11-13 19:58:38,933 - INFO - 23 batches submitted to accumulate stats from 1472 documents (339880 virtual)
-2025-11-13 19:58:40,809 - INFO - 11 accumulators retrieved from output queue
-2025-11-13 19:58:40,876 - INFO - accumulated word occurrence stats for 343701 virtual documents
-2025-11-13 19:58:41,433 - INFO - topic diversity : 0.7899
-2025-11-13 19:59:15,975 - INFO - adding document #0 to Dictionary<0 unique tokens: []>
-2025-11-13 19:59:16,269 - INFO - built Dictionary<30258 unique tokens: ['अग्राधिकार', 'अत्यावश्यक', 'अधिवक्ता', 'अध्ययन', 'अनन्तराज']...> from 1416 documents (total 494224 corpus positions)
-2025-11-13 19:59:16,271 - INFO - Dictionary lifecycle event {'msg': "built Dictionary<30258 unique tokens: ['अग्राधिकार', 'अत्यावश्यक', 'अधिवक्ता', 'अध्ययन', 'अनन्तराज']...> from 1416 documents (total 494224 corpus positions)", 'datetime': '2025-11-13T19:59:16.270825', 'gensim': '4.4.0', 'python': '3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'created'}
-2025-11-13 19:59:16,275 - INFO - using ParallelWordOccurrenceAccumulator<processes=11, batch_size=64> to estimate probabilities from sliding windows
-2025-11-13 19:59:28,762 - INFO - 1 batches submitted to accumulate stats from 64 documents (13311 virtual)
-2025-11-13 19:59:28,767 - INFO - 2 batches submitted to accumulate stats from 128 documents (28919 virtual)
-2025-11-13 19:59:28,773 - INFO - 3 batches submitted to accumulate stats from 192 documents (44523 virtual)
-2025-11-13 19:59:28,779 - INFO - 4 batches submitted to accumulate stats from 256 documents (61616 virtual)
-2025-11-13 19:59:28,785 - INFO - 5 batches submitted to accumulate stats from 320 documents (80672 virtual)
-2025-11-13 19:59:28,792 - INFO - 6 batches submitted to accumulate stats from 384 documents (97480 virtual)
-2025-11-13 19:59:28,800 - INFO - 7 batches submitted to accumulate stats from 448 documents (115990 virtual)
-2025-11-13 19:59:28,808 - INFO - 8 batches submitted to accumulate stats from 512 documents (134296 virtual)
-2025-11-13 19:59:28,815 - INFO - 9 batches submitted to accumulate stats from 576 documents (152072 virtual)
-2025-11-13 19:59:28,823 - INFO - 10 batches submitted to accumulate stats from 640 documents (172962 virtual)
-2025-11-13 19:59:28,830 - INFO - 11 batches submitted to accumulate stats from 704 documents (189631 virtual)
-2025-11-13 19:59:28,837 - INFO - 12 batches submitted to accumulate stats from 768 documents (207494 virtual)
-2025-11-13 19:59:28,846 - INFO - 13 batches submitted to accumulate stats from 832 documents (226403 virtual)
-2025-11-13 19:59:28,852 - INFO - 14 batches submitted to accumulate stats from 896 documents (243836 virtual)
-2025-11-13 19:59:28,860 - INFO - 15 batches submitted to accumulate stats from 960 documents (262245 virtual)
-2025-11-13 19:59:28,866 - INFO - 16 batches submitted to accumulate stats from 1024 documents (269402 virtual)
-2025-11-13 19:59:28,870 - INFO - 17 batches submitted to accumulate stats from 1088 documents (274560 virtual)
-2025-11-13 19:59:28,877 - INFO - 18 batches submitted to accumulate stats from 1152 documents (288245 virtual)
-2025-11-13 19:59:28,883 - INFO - 19 batches submitted to accumulate stats from 1216 documents (303047 virtual)
-2025-11-13 19:59:28,889 - INFO - 20 batches submitted to accumulate stats from 1280 documents (311929 virtual)
-2025-11-13 19:59:28,897 - INFO - 21 batches submitted to accumulate stats from 1344 documents (324900 virtual)
-2025-11-13 19:59:28,903 - INFO - 22 batches submitted to accumulate stats from 1408 documents (338320 virtual)
-2025-11-13 19:59:29,314 - INFO - 23 batches submitted to accumulate stats from 1472 documents (339880 virtual)
-2025-11-13 19:59:31,086 - INFO - 11 accumulators retrieved from output queue
-2025-11-13 19:59:31,141 - INFO - accumulated word occurrence stats for 343701 virtual documents
-2025-11-13 19:59:31,640 - INFO - topic diversity : 0.7960
+2025-11-13 20:35:35,640 - INFO - Starting BERTopic script...
+2025-11-13 20:35:36,035 - INFO - Use pytorch device_name: cpu
+2025-11-13 20:35:36,035 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-13 20:37:06,964 - INFO - Number of topics found: 89
+2025-11-13 20:37:06,979 - INFO - Extracted details for 89 topics (including outlier topic -1 if present).
+2025-11-13 20:37:25,705 - INFO - adding document #0 to Dictionary<0 unique tokens: []>
+2025-11-13 20:37:25,986 - INFO - built Dictionary<30258 unique tokens: ['अग्राधिकार', 'अत्यावश्यक', 'अधिवक्ता', 'अध्ययन', 'अनन्तराज']...> from 1416 documents (total 494224 corpus positions)
+2025-11-13 20:37:25,986 - INFO - Dictionary lifecycle event {'msg': "built Dictionary<30258 unique tokens: ['अग्राधिकार', 'अत्यावश्यक', 'अधिवक्ता', 'अध्ययन', 'अनन्तराज']...> from 1416 documents (total 494224 corpus positions)", 'datetime': '2025-11-13T20:37:25.986964', 'gensim': '4.4.0', 'python': '3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'created'}
+2025-11-13 20:37:25,995 - INFO - using ParallelWordOccurrenceAccumulator<processes=11, batch_size=64> to estimate probabilities from sliding windows
+2025-11-13 20:37:42,232 - INFO - 1 batches submitted to accumulate stats from 64 documents (13311 virtual)
+2025-11-13 20:37:42,243 - INFO - 2 batches submitted to accumulate stats from 128 documents (28919 virtual)
+2025-11-13 20:37:42,249 - INFO - 3 batches submitted to accumulate stats from 192 documents (44523 virtual)
+2025-11-13 20:37:42,259 - INFO - 4 batches submitted to accumulate stats from 256 documents (61616 virtual)
+2025-11-13 20:37:42,268 - INFO - 5 batches submitted to accumulate stats from 320 documents (80672 virtual)
+2025-11-13 20:37:42,279 - INFO - 6 batches submitted to accumulate stats from 384 documents (97480 virtual)
+2025-11-13 20:37:42,289 - INFO - 7 batches submitted to accumulate stats from 448 documents (115990 virtual)
+2025-11-13 20:37:42,298 - INFO - 8 batches submitted to accumulate stats from 512 documents (134296 virtual)
+2025-11-13 20:37:42,306 - INFO - 9 batches submitted to accumulate stats from 576 documents (152072 virtual)
+2025-11-13 20:37:42,318 - INFO - 10 batches submitted to accumulate stats from 640 documents (172962 virtual)
+2025-11-13 20:37:42,327 - INFO - 11 batches submitted to accumulate stats from 704 documents (189631 virtual)
+2025-11-13 20:37:42,350 - INFO - 12 batches submitted to accumulate stats from 768 documents (207494 virtual)
+2025-11-13 20:37:42,360 - INFO - 13 batches submitted to accumulate stats from 832 documents (226403 virtual)
+2025-11-13 20:37:42,368 - INFO - 14 batches submitted to accumulate stats from 896 documents (243836 virtual)
+2025-11-13 20:37:42,383 - INFO - 15 batches submitted to accumulate stats from 960 documents (262245 virtual)
+2025-11-13 20:37:42,391 - INFO - 16 batches submitted to accumulate stats from 1024 documents (269402 virtual)
+2025-11-13 20:37:42,396 - INFO - 17 batches submitted to accumulate stats from 1088 documents (274560 virtual)
+2025-11-13 20:37:42,407 - INFO - 18 batches submitted to accumulate stats from 1152 documents (288245 virtual)
+2025-11-13 20:37:42,415 - INFO - 19 batches submitted to accumulate stats from 1216 documents (303047 virtual)
+2025-11-13 20:37:42,423 - INFO - 20 batches submitted to accumulate stats from 1280 documents (311929 virtual)
+2025-11-13 20:37:42,431 - INFO - 21 batches submitted to accumulate stats from 1344 documents (324900 virtual)
+2025-11-13 20:37:42,440 - INFO - 22 batches submitted to accumulate stats from 1408 documents (338320 virtual)
+2025-11-13 20:37:43,183 - INFO - 23 batches submitted to accumulate stats from 1472 documents (339880 virtual)
+2025-11-13 20:37:45,455 - INFO - 11 accumulators retrieved from output queue
+2025-11-13 20:37:45,558 - INFO - accumulated word occurrence stats for 343701 virtual documents
+2025-11-13 20:37:46,398 - INFO - topic diversity : 0.8258
+2025-11-13 20:38:05,972 - INFO - adding document #0 to Dictionary<0 unique tokens: []>
+2025-11-13 20:38:06,296 - INFO - built Dictionary<30258 unique tokens: ['अग्राधिकार', 'अत्यावश्यक', 'अधिवक्ता', 'अध्ययन', 'अनन्तराज']...> from 1416 documents (total 494224 corpus positions)
+2025-11-13 20:38:06,297 - INFO - Dictionary lifecycle event {'msg': "built Dictionary<30258 unique tokens: ['अग्राधिकार', 'अत्यावश्यक', 'अधिवक्ता', 'अध्ययन', 'अनन्तराज']...> from 1416 documents (total 494224 corpus positions)", 'datetime': '2025-11-13T20:38:06.297485', 'gensim': '4.4.0', 'python': '3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'created'}
+2025-11-13 20:38:06,302 - INFO - using ParallelWordOccurrenceAccumulator<processes=11, batch_size=64> to estimate probabilities from sliding windows
+2025-11-13 20:38:18,971 - INFO - 1 batches submitted to accumulate stats from 64 documents (13311 virtual)
+2025-11-13 20:38:18,977 - INFO - 2 batches submitted to accumulate stats from 128 documents (28919 virtual)
+2025-11-13 20:38:18,984 - INFO - 3 batches submitted to accumulate stats from 192 documents (44523 virtual)
+2025-11-13 20:38:18,991 - INFO - 4 batches submitted to accumulate stats from 256 documents (61616 virtual)
+2025-11-13 20:38:18,998 - INFO - 5 batches submitted to accumulate stats from 320 documents (80672 virtual)
+2025-11-13 20:38:19,007 - INFO - 6 batches submitted to accumulate stats from 384 documents (97480 virtual)
+2025-11-13 20:38:19,016 - INFO - 7 batches submitted to accumulate stats from 448 documents (115990 virtual)
+2025-11-13 20:38:19,024 - INFO - 8 batches submitted to accumulate stats from 512 documents (134296 virtual)
+2025-11-13 20:38:19,033 - INFO - 9 batches submitted to accumulate stats from 576 documents (152072 virtual)
+2025-11-13 20:38:19,042 - INFO - 10 batches submitted to accumulate stats from 640 documents (172962 virtual)
+2025-11-13 20:38:19,051 - INFO - 11 batches submitted to accumulate stats from 704 documents (189631 virtual)
+2025-11-13 20:38:19,060 - INFO - 12 batches submitted to accumulate stats from 768 documents (207494 virtual)
+2025-11-13 20:38:19,069 - INFO - 13 batches submitted to accumulate stats from 832 documents (226403 virtual)
+2025-11-13 20:38:19,078 - INFO - 14 batches submitted to accumulate stats from 896 documents (243836 virtual)
+2025-11-13 20:38:19,091 - INFO - 15 batches submitted to accumulate stats from 960 documents (262245 virtual)
+2025-11-13 20:38:19,095 - INFO - 16 batches submitted to accumulate stats from 1024 documents (269402 virtual)
+2025-11-13 20:38:19,100 - INFO - 17 batches submitted to accumulate stats from 1088 documents (274560 virtual)
+2025-11-13 20:38:19,108 - INFO - 18 batches submitted to accumulate stats from 1152 documents (288245 virtual)
+2025-11-13 20:38:19,115 - INFO - 19 batches submitted to accumulate stats from 1216 documents (303047 virtual)
+2025-11-13 20:38:19,121 - INFO - 20 batches submitted to accumulate stats from 1280 documents (311929 virtual)
+2025-11-13 20:38:19,128 - INFO - 21 batches submitted to accumulate stats from 1344 documents (324900 virtual)
+2025-11-13 20:38:19,135 - INFO - 22 batches submitted to accumulate stats from 1408 documents (338320 virtual)
+2025-11-13 20:38:19,693 - INFO - 23 batches submitted to accumulate stats from 1472 documents (339880 virtual)
+2025-11-13 20:38:21,312 - INFO - 11 accumulators retrieved from output queue
+2025-11-13 20:38:21,397 - INFO - accumulated word occurrence stats for 343701 virtual documents
+2025-11-13 20:38:22,097 - INFO - topic diversity : 0.8258
+2025-11-13 20:39:00,104 - INFO - adding document #0 to Dictionary<0 unique tokens: []>
+2025-11-13 20:39:00,400 - INFO - built Dictionary<30258 unique tokens: ['अग्राधिकार', 'अत्यावश्यक', 'अधिवक्ता', 'अध्ययन', 'अनन्तराज']...> from 1416 documents (total 494224 corpus positions)
+2025-11-13 20:39:00,403 - INFO - Dictionary lifecycle event {'msg': "built Dictionary<30258 unique tokens: ['अग्राधिकार', 'अत्यावश्यक', 'अधिवक्ता', 'अध्ययन', 'अनन्तराज']...> from 1416 documents (total 494224 corpus positions)", 'datetime': '2025-11-13T20:39:00.403000', 'gensim': '4.4.0', 'python': '3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'created'}
+2025-11-13 20:39:00,408 - INFO - using ParallelWordOccurrenceAccumulator<processes=11, batch_size=64> to estimate probabilities from sliding windows
+2025-11-13 20:39:12,196 - INFO - 1 batches submitted to accumulate stats from 64 documents (13311 virtual)
+2025-11-13 20:39:12,199 - INFO - 2 batches submitted to accumulate stats from 128 documents (28919 virtual)
+2025-11-13 20:39:12,205 - INFO - 3 batches submitted to accumulate stats from 192 documents (44523 virtual)
+2025-11-13 20:39:12,213 - INFO - 4 batches submitted to accumulate stats from 256 documents (61616 virtual)
+2025-11-13 20:39:12,219 - INFO - 5 batches submitted to accumulate stats from 320 documents (80672 virtual)
+2025-11-13 20:39:12,227 - INFO - 6 batches submitted to accumulate stats from 384 documents (97480 virtual)
+2025-11-13 20:39:12,234 - INFO - 7 batches submitted to accumulate stats from 448 documents (115990 virtual)
+2025-11-13 20:39:12,241 - INFO - 8 batches submitted to accumulate stats from 512 documents (134296 virtual)
+2025-11-13 20:39:12,248 - INFO - 9 batches submitted to accumulate stats from 576 documents (152072 virtual)
+2025-11-13 20:39:12,256 - INFO - 10 batches submitted to accumulate stats from 640 documents (172962 virtual)
+2025-11-13 20:39:12,265 - INFO - 11 batches submitted to accumulate stats from 704 documents (189631 virtual)
+2025-11-13 20:39:12,274 - INFO - 12 batches submitted to accumulate stats from 768 documents (207494 virtual)
+2025-11-13 20:39:12,282 - INFO - 13 batches submitted to accumulate stats from 832 documents (226403 virtual)
+2025-11-13 20:39:12,290 - INFO - 14 batches submitted to accumulate stats from 896 documents (243836 virtual)
+2025-11-13 20:39:12,298 - INFO - 15 batches submitted to accumulate stats from 960 documents (262245 virtual)
+2025-11-13 20:39:12,303 - INFO - 16 batches submitted to accumulate stats from 1024 documents (269402 virtual)
+2025-11-13 20:39:12,308 - INFO - 17 batches submitted to accumulate stats from 1088 documents (274560 virtual)
+2025-11-13 20:39:12,315 - INFO - 18 batches submitted to accumulate stats from 1152 documents (288245 virtual)
+2025-11-13 20:39:12,325 - INFO - 19 batches submitted to accumulate stats from 1216 documents (303047 virtual)
+2025-11-13 20:39:12,331 - INFO - 20 batches submitted to accumulate stats from 1280 documents (311929 virtual)
+2025-11-13 20:39:12,337 - INFO - 21 batches submitted to accumulate stats from 1344 documents (324900 virtual)
+2025-11-13 20:39:12,353 - INFO - 22 batches submitted to accumulate stats from 1408 documents (338320 virtual)
+2025-11-13 20:39:12,792 - INFO - 23 batches submitted to accumulate stats from 1472 documents (339880 virtual)
+2025-11-13 20:39:14,258 - INFO - 11 accumulators retrieved from output queue
+2025-11-13 20:39:14,329 - INFO - accumulated word occurrence stats for 343701 virtual documents
+2025-11-13 20:39:14,931 - INFO - topic diversity : 0.8120
